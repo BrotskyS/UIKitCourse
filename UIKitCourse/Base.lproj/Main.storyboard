@@ -17,28 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zSQ-sz-ViT">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSQ-sz-ViT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background01" translatesAutoresizingMaskIntoConstraints="NO" id="4x7-ZY-Lfp">
                                         <rect key="frame" x="0.0" y="-140" width="414" height="464.5"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnb-lf-vmn" customClass="CustomView" customModule="UIKitCourse" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="20" width="382" height="350"/>
+                                        <rect key="frame" x="16" y="20" width="382" height="362.5"/>
                                         <subviews>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzt-BE-HFH" customClass="CustomBlurView" customModule="UIKitCourse" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="350"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QZM-Q3-H5Y" customClass="CustomView" customModule="UIKitCourse" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="350"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="362.5"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QZM-Q3-H5Y">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="362"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="4gb-pS-i3q">
                                                             <rect key="frame" x="0.0" y="0.0" width="382" height="217"/>
                                                         </imageView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PzK-Gf-czD">
-                                                            <rect key="frame" x="0.0" y="217" width="382" height="133"/>
+                                                            <rect key="frame" x="0.0" y="217" width="382" height="145.5"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GFS-Ha-zna">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="133"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="145"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKit for IOS 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rx8-du-oTn">
@@ -72,7 +72,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="rx8-du-oTn" secondAttribute="trailing" constant="20" id="czn-kS-Obs"/>
                                                                     <constraint firstItem="c75-gc-cbF" firstAttribute="top" secondItem="rx8-du-oTn" secondAttribute="bottom" constant="8" id="g66-Ti-l3Q"/>
                                                                     <constraint firstItem="kuL-RK-O6l" firstAttribute="top" secondItem="c75-gc-cbF" secondAttribute="bottom" constant="8" id="hzI-KP-8jD"/>
-                                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kuL-RK-O6l" secondAttribute="bottom" constant="16" id="kCb-3y-tQ0"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="kuL-RK-O6l" secondAttribute="bottom" constant="40" id="kCb-3y-tQ0"/>
                                                                     <constraint firstAttribute="trailing" secondItem="kuL-RK-O6l" secondAttribute="trailing" constant="20" id="opT-Ev-GBw"/>
                                                                     <constraint firstItem="kuL-RK-O6l" firstAttribute="top" secondItem="c75-gc-cbF" secondAttribute="bottom" constant="8" id="sNq-bq-Q8Q"/>
                                                                     <constraint firstAttribute="bottom" secondItem="kuL-RK-O6l" secondAttribute="bottom" constant="4" id="xdT-IJ-lXu"/>
@@ -114,7 +114,8 @@
                                         </subviews>
                                         <color key="backgroundColor" name="BlurBackground"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="350" id="3R6-Bj-AOT"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="3R6-Bj-AOT"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="5lE-bY-XNV"/>
                                             <constraint firstAttribute="trailing" secondItem="rzt-BE-HFH" secondAttribute="trailing" id="Clb-0V-vIu"/>
                                             <constraint firstAttribute="bottom" secondItem="rzt-BE-HFH" secondAttribute="bottom" id="KpH-xH-m2g"/>
                                             <constraint firstItem="rzt-BE-HFH" firstAttribute="top" secondItem="qnb-lf-vmn" secondAttribute="top" id="N5n-jc-vIT"/>
@@ -143,13 +144,15 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="qnb-lf-vmn" firstAttribute="leading" secondItem="S5R-fh-oBG" secondAttribute="leading" constant="16" id="3tx-6q-A3d"/>
+                                    <constraint firstItem="qnb-lf-vmn" firstAttribute="leading" secondItem="S5R-fh-oBG" secondAttribute="leading" priority="750" constant="16" id="3tx-6q-A3d"/>
                                     <constraint firstItem="4x7-ZY-Lfp" firstAttribute="top" secondItem="S5R-fh-oBG" secondAttribute="top" id="4b8-9z-dhI"/>
+                                    <constraint firstItem="qnb-lf-vmn" firstAttribute="centerX" secondItem="zSQ-sz-ViT" secondAttribute="centerX" id="5cx-K2-CJn"/>
                                     <constraint firstItem="S5R-fh-oBG" firstAttribute="trailing" secondItem="4x7-ZY-Lfp" secondAttribute="trailing" id="BUF-ze-cw3"/>
                                     <constraint firstItem="qnb-lf-vmn" firstAttribute="top" secondItem="SKB-eD-DUc" secondAttribute="top" constant="20" id="QQn-p5-l0s"/>
                                     <constraint firstAttribute="trailing" secondItem="4x7-ZY-Lfp" secondAttribute="trailing" id="VVk-PF-0Hg"/>
                                     <constraint firstItem="4x7-ZY-Lfp" firstAttribute="leading" secondItem="zSQ-sz-ViT" secondAttribute="leading" id="ZVa-S7-7fR"/>
-                                    <constraint firstItem="S5R-fh-oBG" firstAttribute="trailing" secondItem="qnb-lf-vmn" secondAttribute="trailing" constant="16" id="dEb-E2-j1w"/>
+                                    <constraint firstItem="S5R-fh-oBG" firstAttribute="trailing" secondItem="qnb-lf-vmn" secondAttribute="trailing" priority="750" constant="16" id="dEb-E2-j1w"/>
+                                    <constraint firstAttribute="bottom" secondItem="qnb-lf-vmn" secondAttribute="bottom" constant="40" id="jPa-LW-XD1"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="SKB-eD-DUc"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="S5R-fh-oBG"/>
