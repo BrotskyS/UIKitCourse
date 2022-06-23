@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D79C385286486A100799184 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C381286486A000799184 /* CustomBlurView.swift */; };
+		0D79C386286486A100799184 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C382286486A000799184 /* CustomUIView.swift */; };
+		0D79C387286486A100799184 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C383286486A000799184 /* Font.swift */; };
+		0D79C388286486A100799184 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C384286486A000799184 /* CustomImageView.swift */; };
 		0DF677C22862200C001CD0A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF677C12862200C001CD0A8 /* AppDelegate.swift */; };
 		0DF677C42862200C001CD0A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF677C32862200C001CD0A8 /* SceneDelegate.swift */; };
 		0DF677C62862200C001CD0A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF677C52862200C001CD0A8 /* ViewController.swift */; };
@@ -16,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D79C37F2864827000799184 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		0D79C381286486A000799184 /* CustomBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
+		0D79C382286486A000799184 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		0D79C383286486A000799184 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		0D79C384286486A000799184 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		0DF677BE2862200C001CD0A8 /* UIKitCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF677C12862200C001CD0A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DF677C32862200C001CD0A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +46,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D79C380286486A000799184 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D79C381286486A000799184 /* CustomBlurView.swift */,
+				0D79C382286486A000799184 /* CustomUIView.swift */,
+				0D79C383286486A000799184 /* Font.swift */,
+				0D79C384286486A000799184 /* CustomImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0DF677B52862200C001CD0A8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +76,12 @@
 		0DF677C02862200C001CD0A8 /* UIKitCourse */ = {
 			isa = PBXGroup;
 			children = (
+				0D79C380286486A000799184 /* Helpers */,
 				0DF677C12862200C001CD0A8 /* AppDelegate.swift */,
 				0DF677C32862200C001CD0A8 /* SceneDelegate.swift */,
 				0DF677C52862200C001CD0A8 /* ViewController.swift */,
 				0DF677C72862200C001CD0A8 /* Main.storyboard */,
+				0D79C37F2864827000799184 /* MyPlayground.playground */,
 				0DF677CA2862200E001CD0A8 /* Assets.xcassets */,
 				0DF677CC2862200E001CD0A8 /* LaunchScreen.storyboard */,
 				0DF677CF2862200E001CD0A8 /* Info.plist */,
@@ -139,7 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DF677C62862200C001CD0A8 /* ViewController.swift in Sources */,
+				0D79C386286486A100799184 /* CustomUIView.swift in Sources */,
+				0D79C387286486A100799184 /* Font.swift in Sources */,
+				0D79C388286486A100799184 /* CustomImageView.swift in Sources */,
 				0DF677C22862200C001CD0A8 /* AppDelegate.swift in Sources */,
+				0D79C385286486A100799184 /* CustomBlurView.swift in Sources */,
 				0DF677C42862200C001CD0A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
